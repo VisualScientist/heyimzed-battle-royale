@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div id="upper-notification">
+        <div v-if="showing" id="un-player-counter" v-bind:class="'animate__animated animate__fade'+fadeAnimSet+fadeAnimDir">
+            {{ currentText }}
+            <div v-if="currentRingFormat !== 'none'" id="un-next-ring">
+                {{ currentRingFormat }}{{ currentRing.toString() }}
+            </div>
+        </div>
+    </div>
+
+    <div id="right-notifications">
+        <div class="rn-notify-box">
+            <ul class="rn-notify-list">
+                <li class="rn-notify-item animate__animated animate__slideInDown animate__faster" v-for="(value, index) in log">
+                    {{ value }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="game-menu" v-if="showing" v-bind:class="'animate__animated animate__fade'+fadeAnimSet+fadeAnimDir">
+        <div class="gm-title">
+            <h1 class="gm-title-current-arena">{{localeArena+currentArena.toString()}}</h1>
+            <h3 class="gm-title-player-count">{{ players.length }}/{{ arenaMaxPlayers }}</h3>
+            <h3 class="gm-title-arena-status">{{ arenaStatus }}</h3>
+        </div>
+        <div class="gm-players">
+            <ul class="gm-players-list">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

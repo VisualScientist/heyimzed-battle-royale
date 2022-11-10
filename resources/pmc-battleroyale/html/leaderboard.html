@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/leaderboard.css">
+</head>
+<body>
+    <div id="leaderboard">
+        <h1 class="board-title">{{localeBoard}}</h1>
+        <div class="board-list">
+            <li class="board-item" v-for="(value, index) in board">
+                <div class="board-item-name">{{value ? value.name : "--"}}</div>
+                <div class="board-item-score">{{value ? value.score : "--"}} {{localeScore}}</div>
+            </li>
+        </div>
+        <p class="board-description">{{localeDescription}}</p>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/leaderboard.js"></script>
+</body>
+</html>

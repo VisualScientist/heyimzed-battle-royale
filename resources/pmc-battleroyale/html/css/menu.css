@@ -1,0 +1,64 @@
+
+#game-menu {
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    min-width: 20vw;
+    max-width: 40vw;
+    background-color: rgba(0, 0, 0, 0.658);
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    color: white;
+}
+
+.gm-title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+.gm-title-current-arena {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.gm-title-player-count {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.gm-title-arena-status {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.gm-players {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.gm-players-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.gm-players-list-item {
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.gm-player-name {
+    display: inline;
+    width: 50%;
+}
+.gm-player-score {
+    display: inline;
+    width: 50%;
+}

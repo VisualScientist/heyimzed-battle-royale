@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* player-counter */
+#upper-notification {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+#un-player-counter {
+    position: relative;
+    top: 2vh;
+    right: 1.5vw;
+    font-size: 25px;
+    background-color: #0000008c;
+    border-radius: 5px;
+    color: white;
+}
+
+/* right-notification */
+
+.rn-notify-box {
+    position: absolute;
+    width: auto;
+    height: 30vh;
+    right: 1vw;
+    top: 25vh;
+}
+
+.rn-notify-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rn-notify-item {
+    color: white;
+    text-shadow: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+}
